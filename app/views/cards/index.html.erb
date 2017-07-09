@@ -1,4 +1,21 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<div class="containter">
+  <h2 class="title">Cards Against <span class="dark">Mozharity</span></h2>
+
+  <form action="" id="cah_form" class="cah-form">
+    <div class="row">
+      <div class="col col-half">
+        <textarea name="black_cards[]" cols="30" rows="10" class="card card-black"></textarea>
+      </div>
+      <div class="col col-half">
+        <textarea name="white-cards[]" cols="30" rows="10" class="card card-white" autofocus></textarea>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="card-controls">
+        <a href="#" id="add_black" class="button button-dark">+</a>
+        <a href="#" id="add_white" class="button">+</a>
+      </div>
+      <input type="submit" class="button">
+    </div>
+  </form>
+</div>
