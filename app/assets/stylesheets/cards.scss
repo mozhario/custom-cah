@@ -19,6 +19,7 @@ body {
 .col {
     display: inline-block;
     white-space: normal;
+    vertical-align: top;
 }
 .col-half {
     width: 50%;
@@ -28,6 +29,7 @@ body {
     width: 200px;
     padding: 20px;
     font-size: 16px;
+    margin: 0 10px 10px 0;
     border: 0;
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;

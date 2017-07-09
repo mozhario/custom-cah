@@ -3,17 +3,17 @@
 
   <form action="" id="cah_form" class="cah-form">
     <div class="row">
-      <div class="col col-half">
+      <div class="col col-half cards cards-black">
         <textarea name="black_cards[]" cols="30" rows="10" class="card card-black"></textarea>
       </div>
-      <div class="col col-half">
+      <div class="col col-half cards cards-white">
         <textarea name="white-cards[]" cols="30" rows="10" class="card card-white" autofocus></textarea>
       </div>
     </div>
     <div class="controls">
       <div class="card-controls">
-        <a href="#" id="add_black" class="button button-dark">+</a>
-        <a href="#" id="add_white" class="button">+</a>
+        <a href="#" id="add_black" class="button button-dark add-card" data-type="black">+</a>
+        <a href="#" id="add_white" class="button add-card" data-type="white">+</a>
       </div>
       <input type="submit" class="button">
     </div>
