@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20170708202617) do
 
   create_table "cards", force: :cascade do |t|
     t.text     "text"
-    t.string   "type"
+    t.string   "card_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
