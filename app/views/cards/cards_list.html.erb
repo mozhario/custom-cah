@@ -1,4 +1,14 @@
-<h2>Cards</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<div class="containter">
+  <h2 class="title">Cards Against <span class="dark">Mozharity</span></h2>
+
+  <%= @cards.count %>
+
+  <div class="cards-list">
+    <% @cards.each do |card| %>
+      <div class="card card-<%= card.card_type %>">
+        <%= card.text %>
+      </div>
+    <% end %>
+  </div>
+  
+</div>

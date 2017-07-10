@@ -8,9 +8,6 @@ class CardsController < ApplicationController
     end
 
     def index
-        # params.each do |key,value|
-        #     Rails.logger.warn "Param #{key}: #{value}"
-        # end
         
         white_cards = params["white-cards"]
         black_cards = params["black-cards"]
@@ -23,12 +20,16 @@ class CardsController < ApplicationController
             end
         end
 
-        if white_cards
+        if black_cards
             black_cards.each do |text|
                 unless text.strip.empty? 
                     card = Card.create(text: text, card_type: "black")
                 end
             end
         end
+    end
+
+    def cards_list
+        @cards = Card.all.order :card_type
     end
 end

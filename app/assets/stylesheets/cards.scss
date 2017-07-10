@@ -27,6 +27,7 @@ body {
 
 .card {
     width: 200px;
+    height: 200px;
     padding: 20px;
     font-size: 16px;
     margin: 0 10px 10px 0;
@@ -37,6 +38,7 @@ body {
     -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    vertical-align: top;
 
     resize: none;
 
@@ -51,6 +53,13 @@ body {
 }
 .card:focus {
     outline: none;
+}
+
+.cards-list .card {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    font-size: 15px;
 }
 
 .button {
@@ -96,4 +105,15 @@ body {
 
 #cah_form .row {
     margin-bottom: 20px;
+}
+
+
+
+@media print {
+    .title {
+        display: none;
+    }
+    .card {
+        -webkit-print-color-adjust: exact;
+    }
 }
