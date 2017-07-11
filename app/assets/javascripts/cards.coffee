@@ -12,4 +12,6 @@ jQuery ->
         cards_container.append(
             "<textarea name='#{type}-cards[]' cols='30' rows='10' "+
             "class='card card-#{type}'></textarea>")
+
+        $(".cards-#{type} .card").last().focus()
         return
