@@ -32,4 +32,11 @@ class CardsController < ApplicationController
     def cards_list
         @cards = Card.all.order :card_type
     end
+
+    def hide
+        id = params[:id]
+        card = Card.find(id)
+        card.visible = false
+        card.save
+    end
 end

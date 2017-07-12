@@ -5,9 +5,14 @@
 
   <div class="cards-list">
     <% @cards.each do |card| %>
-      <div class="card card-<%= card.card_type %>">
-        <%= card.text %>
-      </div>
+      <% if card.visible %>
+        <div class="card card-<%= card.card_type %>" data-id="<%= card.id %>">
+          <div class="card-controls">
+            <a href="#" class="hide">x</a>
+          </div>
+          <%= card.text %>
+        </div>
+      <% end %>
     <% end %>
   </div>
   

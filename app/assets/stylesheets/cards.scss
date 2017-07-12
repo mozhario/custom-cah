@@ -26,6 +26,7 @@ body {
 }
 
 .card {
+    position: relative;
     width: 200px;
     height: 200px;
     padding: 20px;
@@ -53,6 +54,31 @@ body {
 }
 .card:focus {
     outline: none;
+}
+
+.card-controls {
+    display: none;
+
+    position: absolute;
+    top: -4px;
+    right: 10px;
+}
+.card-controls a {
+    color: #efefef;
+    display: inline-block;
+    background: #a80324;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 18px;
+    width: 24px;
+    text-align: center;
+    line-height: 17px;
+    vertical-align: middle;
+    text-decoration: none;
+    box-shadow: 0 0 3px black;
+}
+.card:hover .card-controls {
+    display: inline-block;
 }
 
 .cards-list .card {
@@ -87,7 +113,7 @@ body {
     }
 }
 .controls {
-    .card-controls {
+    .card-form-controls {
         float: right;
         margin-top: 12px;
     }

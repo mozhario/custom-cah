@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'cards#index'
 
   get '/cards/', to: 'cards#cards_list'
+  get '/cards/hide/:id', to: 'cards#hide'
 end

@@ -15,3 +15,11 @@ jQuery ->
 
         $(".cards-#{type} .card").last().focus()
         return
+
+    $('.card-controls .hide').on "click", (e) ->
+        e.preventDefault()
+
+        card = $(this).closest('.card')
+        id = card.attr('data-id')
+        console.log(id)
+        $.get "/cards/hide/#{id}"
